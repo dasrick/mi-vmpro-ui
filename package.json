@@ -20,6 +20,9 @@
   "engines": {
     "node": "0.12.*"
   },
+  "devDependencies": {
+    "david": "^6.1.6"
+  },
   "scripts": {
     "test": "exit 0;"
   }
