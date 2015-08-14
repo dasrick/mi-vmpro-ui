@@ -3,20 +3,23 @@
   "version": "0.0.0",
   "description": "AngularJS frontend app for VideoManager Pro of MovingImage.",
   "main": "serve.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dasrick/mi-vmpro-ui.git"
-  },
+  "author": "Enrico Hoffmann",
+  "license": "MIT",
   "keywords": [
     "angularjs",
     "vmpro"
   ],
-  "author": "Enrico Hoffmann",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dasrick/mi-vmpro-ui.git"
+  },
   "bugs": {
     "url": "https://github.com/dasrick/mi-vmpro-ui/issues"
   },
   "homepage": "https://github.com/dasrick/mi-vmpro-ui#readme",
+  "engines": {
+    "node": "0.12.*"
+  },
   "scripts": {
     "test": "exit 0;"
   }
