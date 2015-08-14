@@ -20,10 +20,14 @@
   "engines": {
     "node": "0.12.*"
   },
+  "dependencies": {
+    "express": "^4.13.1"
+  },
   "devDependencies": {
     "david": "^6.1.6"
   },
   "scripts": {
+    "start": "node serve.js",
     "test": "exit 0;"
   }
 }
