@@ -21,13 +21,20 @@
     "node": "0.12.*"
   },
   "dependencies": {
-    "express": "^4.13.1"
+    "angular": "^1.4.3",
+    "express": "^4.13.1",
+    "json-loader": "^0.5.2",
+    "webpack": "^1.11.0"
   },
   "devDependencies": {
     "david": "^6.1.6"
   },
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node serve.js",
+    "build": "npm run build:scripts",
+    "prebuild:scripts": "mkdir -p web/js/",
+    "build:scripts": "webpack --module-bind json -d src/app.js web/js/app.js",
     "test": "exit 0;"
   }
 }
