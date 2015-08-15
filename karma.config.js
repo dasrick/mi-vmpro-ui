@@ -7,13 +7,7 @@ module.exports = function (karma) {
 
     files: [
       'tests/base.js',
-      'tests/**/*Spec.js',
-      'src/**/*.js'
-    ],
-    exclude: [
-      'src/**/config.js',
-      'src/**/index.js',
-      'src/**/app.js'
+      'tests/**/*Spec.js'
     ],
 
     reporters: ['progress', 'coverage'],
@@ -34,18 +28,26 @@ module.exports = function (karma) {
     },
     preprocessors: {
       'tests/base.js': ['webpack'],
-      'tests/**/*Spec.js': ['webpack'],
-      //'src/**/*.js': ['coverage']
-      //'src/**/*.js': ['webpack']
+      'tests/**/*Spec.js': ['webpack']
     },
 
     browsers: ['PhantomJS'],
 
-    logLevel: 'LOG_INFO',
+    logLevel: karma.LOG_INFO,
 
     singleRun: true,
     autoWatch: true,
 
-    colors: true
+    colors: true,
+
+    webpack: {
+      module: {
+        postLoaders: [{ // << add subject as webpack's postloader
+          test: /\.js$/,
+          exclude: /(tests|node_modules)\//,
+          loader: 'istanbul-instrumenter'
+        }]
+      }
+    }
   });
 };
