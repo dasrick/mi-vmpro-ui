@@ -21,20 +21,34 @@
     "node": "0.12.*"
   },
   "dependencies": {
-    "angular": "^1.4.3",
-    "express": "^4.13.1",
-    "json-loader": "^0.5.2",
-    "webpack": "^1.11.0"
+    "express": "^4.13.1"
   },
   "devDependencies": {
-    "david": "^6.1.6"
+    "angular": "^1.4.3",
+    "angular-mocks": "^1.4.4",
+    "angular-resource": "^1.4.4",
+    "angular-ui-router": "^0.2.15",
+    "david": "^6.1.6",
+    "fs-extra": "^0.23.1",
+    "glob": "^5.0.13",
+    "jasmine-core": "^2.3.4",
+    "json-loader": "^0.5.2",
+    "karma": "^0.13.3",
+    "karma-coverage": "^0.5.0",
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "phantomjs": "^1.9.18",
+    "webpack": "^1.11.0"
   },
   "scripts": {
     "postinstall": "npm run build",
     "start": "node serve.js",
-    "build": "npm run build:scripts",
+    "build": "npm run build:copy-views && npm run build:scripts",
+    "prebuild:copy-views": "mkdir -p web/views/",
+    "build:copy-views": "node scripts/copy.js src/**/views/*.html web/views/",
     "prebuild:scripts": "mkdir -p web/js/",
     "build:scripts": "webpack --module-bind json -d src/app.js web/js/app.js",
-    "test": "exit 0;"
+    "test": "node_modules/karma/bin/karma start karma.config.js"
   }
 }
