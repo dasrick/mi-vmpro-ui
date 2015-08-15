@@ -10,18 +10,17 @@
 
 Here are some calls ...
 
-The initial call will be almost
+The initial task will be almost
 
     npm install
 
-The install call will automatically call the *build* task ... see next command
+The *install* task will automatically call the *build* task ... see next command
 
 
 ## Development
 
 To build all parts of the app
 
-    # coming soon
     npm run build
 
 
@@ -36,7 +35,7 @@ just check the codestyle with jscs or jshint
 
 to run only the karma test use
 
-    npm run test:karma
+    npm run test
 
 
 ### Running local webserver
