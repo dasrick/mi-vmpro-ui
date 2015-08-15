@@ -34,6 +34,7 @@
     "glob": "^5.0.13",
     "istanbul-instrumenter-loader": "^0.1.3",
     "jasmine-core": "^2.3.4",
+    "jscs": "^2.1.0",
     "json-loader": "^0.5.2",
     "karma": "^0.13.3",
     "karma-coverage": "^0.5.0",
@@ -48,13 +49,12 @@
   "scripts": {
     "postinstall": "npm run build",
     "start": "node serve.js",
-    "build": "npm run build:css && npm run build:scripts && npm run build:views",
-    "prebuild:css": "mkdir -p web/css/",
+    "prebuild": "mkdir -p web/css/ web/js/ web/views/",
+    "build": "npm run build:css && npm run jscs && npm run build:scripts && npm run build:views",
     "build:css": "lessc --autoprefix='last 2 versions,ie 9' src/media/less/style.less  web/css/style.css && cleancss --source-map -o web/css/style.min.css web/css/style.css",
-    "prebuild:views": "mkdir -p web/views/",
-    "build:views": "node scripts/copy.js src/**/views/*.html web/views/",
-    "prebuild:scripts": "mkdir -p web/js/",
     "build:scripts": "webpack --module-bind json -d src/app.js web/js/app.js",
+    "build:views": "node scripts/copy.js src/**/views/*.html web/views/",
+    "jscs": "jscs ./src ./tests ./scripts",
     "test": "node_modules/karma/bin/karma start karma.config.js"
   }
 }
