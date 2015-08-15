@@ -26,9 +26,8 @@ To build all parts of the app
 
 just check the codestyle with jscs or jshint
 
-    # coming soon
     npm run jscs   
-    npm run lint   
+    npm run jshint   
     
 
 ### Tests
