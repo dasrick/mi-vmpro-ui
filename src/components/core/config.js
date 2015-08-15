@@ -7,7 +7,7 @@ module.exports = {
     views: {
       'app': {
         templateUrl: '/views/core/app.html',
-        controller: 'CoreController as coreVm'
+        controller: 'AppController as appVm'
       }
     }
   }

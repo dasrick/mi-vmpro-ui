@@ -1,8 +1,8 @@
 'use strict';
 
-var CoreController = require('../../../../src/components/core/controller/CoreController');
+var AppController = require('../../../../src/components/core/controller/AppController');
 
-describe('Components:Core:Controller:CoreController', function () {
+describe('Components:Core:Controller:AppController', function () {
 
   var createController;
 
@@ -10,7 +10,7 @@ describe('Components:Core:Controller:CoreController', function () {
     angular.mock.inject(function ($injector) {
       var $controller = $injector.get('$controller');
       createController = function () {
-        return $controller(CoreController);
+        return $controller(AppController);
       };
     });
   });

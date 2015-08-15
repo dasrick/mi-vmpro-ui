@@ -6,7 +6,7 @@ var RoutingConfig = require('./config');
 module.exports = angular.module('core', []);
 
 angular.module('core')
-  .controller('CoreController', require('./controller/CoreController'))
+  .controller('AppController', require('./controller/AppController'))
   .config(function ($stateProvider) {
     angular.forEach(RoutingConfig, function (config, name) {
       $stateProvider.state(name, config);
