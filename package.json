@@ -1,6 +1,6 @@
 {
   "name": "mi-vmpro-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "AngularJS frontend app for VideoManager Pro of MovingImage.",
   "main": "serve.js",
   "author": "Enrico Hoffmann",
