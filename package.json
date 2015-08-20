@@ -34,7 +34,6 @@
     "angular-mocks": "^1.4.4",
     "angular-resource": "^1.4.4",
     "angular-ui-router": "^0.2.15",
-    "bootstrap": "^3.3.5",
     "clean-css": "^3.3.9",
     "david": "^6.1.6",
     "font-awesome": "^4.4.0",
@@ -53,6 +52,7 @@
     "karma-webpack": "^1.7.0",
     "less": "^2.5.1",
     "less-plugin-autoprefix": "^1.4.2",
+    "mi24-bootstrap": "^0.3.3",
     "npm-font-source-sans-pro": "0.0.3",
     "phantomjs": "^1.9.18",
     "webpack": "^1.11.0"
