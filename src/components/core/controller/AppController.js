@@ -4,7 +4,6 @@
  */
 module.exports = function () {
   var vm = this;
-  //vm.appversion = process.env.appversion;
-  vm.testinger = 'törö';
+  vm.appversion = process.env.appversion;
   // global app settings will placed here ...
 };

@@ -1,5 +1,5 @@
 {
-  "core.application.label": "VideoManager Pro",
-  "core.application.title": "VMPro",
-  "core.application.icon": "fa-circle-o-notch"
+  "core.application.label": "VideoManager",
+  "core.application.title": "VMPro UI",
+  "core.application.icon": "fa-play-circle"
 }

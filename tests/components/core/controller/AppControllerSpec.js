@@ -16,8 +16,10 @@ describe('Components:Core:Controller:AppController', function () {
   });
 
   it('should init the core controller', function () {
+    var tmpAppVersion = 'v1.2.3';
+    process.env.appversion = tmpAppVersion;
     var controller = createController();
-    expect(controller.testinger).toBe('törö');
+    expect(controller.appversion).toBe(tmpAppVersion);
   });
 
 });

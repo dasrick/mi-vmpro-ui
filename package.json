@@ -54,7 +54,7 @@
     "karma-webpack": "^1.7.0",
     "less": "^2.5.1",
     "less-plugin-autoprefix": "^1.4.2",
-    "mi24-bootstrap": "^0.3.3",
+    "mi24-bootstrap": "^0.3.4",
     "npm-font-source-sans-pro": "0.0.3",
     "phantomjs": "^1.9.18",
     "webpack": "^1.11.0"
