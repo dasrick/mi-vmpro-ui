@@ -24,7 +24,7 @@ angular.module('mi-vmpro-ui-app', requires)
       //if (UserService.isLoggedIn() === true) {
       //  $state.go('app.management.dashboard');
       //} else {
-      //  $state.go('app.security.login');
+        $state.go('app.security.login');
       //}
     });
     $resourceProvider.defaults.stripTrailingSlashes = true;

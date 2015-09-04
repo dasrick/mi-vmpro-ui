@@ -1,0 +1,20 @@
+{
+  "security.form.login.header": "Anmeldung",
+  "security.form.login.msg": "Geben Sie hier bitte ihre Login-Daten ein.",
+  "security.form.request-password.header": "Passwort anfordern",
+  "security.form.request-password.msg": "Geben Sie bitte Ihre Emailadresse an, um ein neues Passwort anzufordern.",
+  "security.form.set-password.header": "Passwort setzen",
+  "security.form.set-password.msg": "Geben Sie bitte zweimal das neue Passwort an.",
+  "security.form.email.placeholder": "name@excample.com",
+  "security.form.password.placeholder": "Passwort",
+  "security.form.login.label": "Anmelden",
+  "security.form.forgot-password.label": "Passwort vergessen?",
+  "security.form.request-password.label": "Passwort anfordern",
+  "security.form.save-password.label": "Passwort setzen",
+
+  "security.msg.login.error.unknown": "Es ist ein unbekannter Fehler beim Login aufgetreten.",
+  "security.msg.login.error.unauthorized": "Ihre Zugansdaten sind inkorrekt",
+  "security.msg.login.error.user_locked": "Ihr Zugang ist gesperrt. Wenden Sie sich bitte an Ihren Adminsitrator.",
+  "security.msg.request-password.success": "success",
+  "security.msg.request-password.error": "error"
+}
