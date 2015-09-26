@@ -22,7 +22,7 @@ function PasswordResetController(AuthService, AlertService, $state, resetToken) 
     AuthService.passwordReset(vm.formData).then(
       function () {
         AlertService.add('success', 'security.msg.password-reset.success');
-        $state.go('security.login', {}, {'reload': true});
+        $state.go('app.security.login', {}, {'reload': true});
       }, function (response) {
         var msg;
         switch (response.status) {

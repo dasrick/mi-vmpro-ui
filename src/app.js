@@ -4,6 +4,7 @@ var angular = require('angular');
 
 process.env.appversion = require('../package.json').version;
 
+require('angular-bootstrap');
 require('angular-cache');
 require('angular-jwt');
 require('angular-resource');
@@ -15,6 +16,7 @@ require('mi-angular-alert-service');
 require('mi-angular-vmp-auth-service');
 
 var requires = [
+  'ui.bootstrap',
   'angular-cache',
   'angular-jwt',
   'ngResource',

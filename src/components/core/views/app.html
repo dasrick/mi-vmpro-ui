@@ -10,3 +10,6 @@
     <aside class="content cs-3 "></aside>
 </header>
 <main ui-view="main"></main>
+<div class="global-alerts" ng-cloak>
+    <div alert ng-repeat="alert in alerts" type="{{alert.type}}" close="alert.close()">{{alert.msg}}</div>
+</div>

@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "angular": "^1.4.5",
+    "angular-bootstrap": "^0.12.2",
     "angular-cache": "^4.3.2",
     "angular-jwt": "0.0.9",
     "angular-mocks": "^1.4.5",
