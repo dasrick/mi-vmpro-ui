@@ -1,40 +1,39 @@
-<h3 translate="security.form.login.header"></h3>
+<form class="form" id="formLogin" name="formLogin" novalidate>
+    <h3 translate="security.form.login.header"></h3>
+    <p translate="security.form.login.msg"></p>
 
-<p translate="security.form.login.msg"></p>
-
-<form class="form" id="formLogin" name="form" novalidate>
-    <div class="form-group">
+    <div class="form-group"
+         ng-class="{'has-error':formLogin.email.$invalid && !formLogin.email.$pristine }">
         <input type="email"
                name="email"
                class="form-control"
                placeholder="{{'security.form.email.placeholder'|translate}}"
-               ng-model="loginVm.loginData.email"
+               ng-model="loginVm.formData.username"
                autofocus
-               required
-                >
+               required>
     </div>
-    <div class="form-group">
+    <div class="form-group"
+         ng-class="{'has-error':formLogin.password.$invalid && !formLogin.password.$pristine }">
         <input type="password"
                name="password"
                class="form-control"
                placeholder="{{'security.form.password.placeholder'|translate}}"
-               ng-model="loginVm.loginData.password"
-               required
-                >
+               ng-model="loginVm.formData.password"
+               required>
     </div>
+
     <div class="row">
-        <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6">
             <button ng-click="loginVm.login()"
-                    ng-disabled="form.$invalid"
-                    translate="security.form.login.label"
+                    ng-disabled="formLogin.$invalid"
+                    translate="security.form.btn.login.label"
                     class="btn btn-block btn-primary">
             </button>
         </div>
-        <div class="col-sm-6 col-md-6">
-            <a hide-login
-               ui-sref="app.security.password-request"
+        <div class="col-sm-6">
+            <a ui-sref="security.password-request"
                class="btn btn-block btn-link"
-               translate="security.form.forgot-password.label">
+               translate="security.form.btn.password-forgot.label">
             </a>
         </div>
     </div>

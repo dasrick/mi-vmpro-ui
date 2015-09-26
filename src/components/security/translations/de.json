@@ -1,20 +1,44 @@
 {
+  "security.form.register.header": "Registrierung",
+  "security.form.register.msg": "Bitte füllen Sie das folgende Formular aus, um ein Nutzerkonto zu registrieren.",
+
   "security.form.login.header": "Anmeldung",
   "security.form.login.msg": "Geben Sie hier bitte ihre Login-Daten ein.",
-  "security.form.request-password.header": "Passwort anfordern",
-  "security.form.request-password.msg": "Geben Sie bitte Ihre Emailadresse an, um ein neues Passwort anzufordern.",
-  "security.form.set-password.header": "Passwort setzen",
-  "security.form.set-password.msg": "Geben Sie bitte zweimal das neue Passwort an.",
-  "security.form.email.placeholder": "name@excample.com",
-  "security.form.password.placeholder": "Passwort",
-  "security.form.login.label": "Anmelden",
-  "security.form.forgot-password.label": "Passwort vergessen?",
-  "security.form.request-password.label": "Passwort anfordern",
-  "security.form.save-password.label": "Passwort setzen",
 
-  "security.msg.login.error.unknown": "Es ist ein unbekannter Fehler beim Login aufgetreten.",
-  "security.msg.login.error.unauthorized": "Ihre Zugansdaten sind inkorrekt",
-  "security.msg.login.error.user_locked": "Ihr Zugang ist gesperrt. Wenden Sie sich bitte an Ihren Adminsitrator.",
-  "security.msg.request-password.success": "success",
-  "security.msg.request-password.error": "error"
+  "security.form.password-request.header": "Passwort anfordern",
+  "security.form.password-request.msg": "Geben Sie bitte Ihre E-Mailadresse an, um ein neues Passwort anzufordern.",
+
+  "security.form.password-reset.header": "Passwort setzen",
+  "security.form.password-reset.msg": "Geben Sie bitte zweimal das neue Passwort an.",
+
+  "security.form.email.label": "E-Mail",
+  "security.form.email.placeholder": "name@example.com",
+  "security.form.password.label": "Passwort",
+  "security.form.password.placeholder": "Passwort",
+  "security.form.password-confirm.label": "Passwort wiederholen",
+  "security.form.password-confirm.placeholder": "Passwort wiederholen",
+  "security.form.password-confirm.error": "Die Passwörter stimmen nicht überein",
+
+  "security.form.btn.register.label": "Registrieren",
+  "security.form.btn.login.label": "Anmelden",
+  "security.form.btn.back-to-login.label": "Zurück zur Anmeldung",
+  "security.form.btn.password-forgot.label": "Passwort vergessen?",
+  "security.form.btn.password-request.label": "Passwort anfordern",
+  "security.form.btn.password-reset.label": "Passwort speichern",
+
+  "security.msg.common.error.unknown": "Es ist ein unbekannter Fehler aufgetreten.",
+  "security.msg.common.error.invalidresponse": "Die Antwort vom Service ist fehlerhaft",
+  "security.msg.common.error.404": "Der Service ist aktuell nicht erreichbar",
+
+  "security.msg.login.error.400": "Fehler bei den eingegebenen Daten",
+  "security.msg.login.success": "Sie haben sich erfolgreich angemeldet",
+
+  "security.msg.password-reset.error.400": "Fehler bei den eingegebenen Daten",
+  "security.msg.password-reset.success": "Das Passwort wurde erfolgreich gesetzt",
+
+  "security.msg.password-request.error.400": "Fehler bei den eingegebenen Daten",
+  "security.msg.password-request.success": "Die Anfrage war erfolgreich. Sie erhalten zeitnah eine E-Mail.",
+
+  "security.msg.register.error.400": "Fehler bei den eingegebenen Daten",
+  "security.msg.register.success": "Die Aktivierung war erfolgreich."
 }

@@ -4,26 +4,46 @@ module.exports = {
   'app.security.login': {
     url: '/login',
     views: {
-      'content': {
-        templateUrl: '/views/security/login.html'
-        //controller: 'SecurityLoginController as loginVm'
+      'box-content': {
+        templateUrl: 'views/security/login.html',
+        controller: 'LoginController as loginVm'
+      }
+    }
+  },
+  'app.security.register': {
+    url: '/register/{activationToken:[0-9a-fA-F\\-]{36}}',
+    views: {
+      'box-content': {
+        templateUrl: 'views/security/register.html',
+        controller: 'RegisterController as registerVm'
+      }
+    },
+    resolve: {
+      activationToken: function ($stateParams) {
+        return $stateParams.activationToken;
       }
     }
   },
   'app.security.password-request': {
-    url: '/request-password',
+    url: '/password-request',
     views: {
-      'content': {
-        templateUrl: '/views/security/request-password.html'
-        //controller: 'SecurityRequestPasswordController as requestPasswordVm'
+      'box-content': {
+        templateUrl: 'views/security/password-request.html',
+        controller: 'PasswordRequestController as passwordRequestVm'
       }
     }
   },
-  'app.security.password-set': {
-    url: '/set-password',
+  'app.security.password-reset': {
+    url: '/password-reset/{resetToken:[0-9a-fA-F\\-]{36}}',
     views: {
-      'content': {
-        templateUrl: '/views/security/set-password.html'
+      'box-content': {
+        templateUrl: 'views/security/password-reset.html',
+        controller: 'PasswordResetController as passwordResetVm'
+      }
+    },
+    resolve: {
+      resetToken: function ($stateParams) {
+        return $stateParams.resetToken;
       }
     }
   }

@@ -4,6 +4,9 @@ module.exports = {
   'app': {
     url: '',
     abstract: true,
+    data: {
+      requireAuth: true
+    },
     views: {
       'app': {
         templateUrl: '/views/core/app.html',
@@ -41,6 +44,9 @@ module.exports = {
   'app.security': {
     url: '',
     abstract: true,
+    data: {
+      requireAuth: false
+    },
     views: {
       'main': {
         templateUrl: '/views/core/1col-centerbox.html'
